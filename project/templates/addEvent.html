@@ -1,0 +1,22 @@
+
+{% extends 'base.html' %}
+
+{% block title %} EventPlanner.com  {% endblock title %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block body %}
+
+<div class="container">
+<form  action="/added/" enctype='multipart/form-data' method="post">
+  {% csrf_token %}
+  {{form|crispy}}
+
+
+  <div class="d-grid gap-2 col-6 mx-auto">
+    <input type="submit" class="btn btn-success btn-lg m-4" >
+  </div>
+</form>
+</div>
+{% endblock %}

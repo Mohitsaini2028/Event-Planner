@@ -1,0 +1,13 @@
+.icon-red {
+  color: red;
+}
+
+.filter-img:hover{
+
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.icon-large {
+  font-size: 25px;
+}
